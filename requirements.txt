@@ -1,0 +1,11 @@
+# Core framework
+Django==5.2.3
+
+# REST API
+djangorestframework==3.16.0
+
+# CORS for React frontend
+django-cors-headers>=3.13.0
+
+# MongoDB support
+pymongo~=4.13.2
