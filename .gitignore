@@ -1,0 +1,43 @@
+# === Python (.venv, __pycache__, etc) ===
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+.venv/
+.idea/
+*.log
+*.sqlite3
+db.sqlite3
+
+# === Django ===
+*.log
+local_settings.py
+media/
+staticfiles/
+static/
+
+# === React (Node.js, Vite) ===
+node_modules/
+dist/
+build/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+
+# === Environment Files ===
+.env
+.env.*
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+
+# === VSCode ===
+.vscode/

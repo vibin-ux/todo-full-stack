@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('../public/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.App {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 40px;
+  width: 90%;
+  max-width: 600px;
+  height: 720px; /* ✅ fixed height */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  animation: fadeInCard 0.8s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* keep form, todos, and quote in place */
+  overflow: hidden;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #1f2a40;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  text-align: center;
+  font-style: italic;
+  color: #36475f;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  animation: fadeInText 1.5s ease;
+}
+
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.todo-form input {
+  padding: 12px;
+  border: 1px solid #aaa;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.todo-form input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #91c5f5;
+}
+
+.todo-form button {
+  padding: 12px;
+  background-color: #3e8ed0;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.todo-form button:hover {
+  background-color: #2e6da8;
+  transform: scale(1.02);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  flex-grow: 1; /* fills the space between form and quote */
+}
+
+li {
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+li button {
+  margin-top: 8px;
+  margin-right: 8px;
+}
+
+.quote-box {
+  height: 60px; /* ✅ fixed height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  color: #555;
+  font-style: italic;
+  animation: fadeInQuote 1s ease;
+  text-align: center;
+  padding: 0 10px;
+  flex-shrink: 0;
+}
+
+/* Animations */
+@keyframes fadeInCard {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeInText {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInQuote {
+  0% { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
