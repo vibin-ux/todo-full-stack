@@ -16,7 +16,7 @@ Welcome to **To Do List**, a fully functional and stylish full stack task manage
 
 ## 📸 Demo
 
-> 🎥 See the full walkthrough: [`todo demo video`](./todo%20demo%20video.mkv)
+> 🎥 See the full walkthrough: https://drive.google.com/file/d/1_IGqQQUWqrWD04LDwa3yb15oaBFke39M/view?usp=drive_link
 
 ---
 
